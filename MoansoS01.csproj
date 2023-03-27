@@ -56,6 +56,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCheckBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckBox.Designer.cs">
+      <DependentUpon>FormCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComboBox.Designer.cs">
+      <DependentUpon>FormComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDB.Designer.cs">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLB.Designer.cs">
+      <DependentUpon>FormLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibre.Designer.cs">
+      <DependentUpon>FormLibre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
