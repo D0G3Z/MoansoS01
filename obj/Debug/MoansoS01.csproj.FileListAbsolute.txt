@@ -8,3 +8,4 @@ C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.csproj.GenerateResourc
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.csproj.CoreCompileInputs.cache
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.exe
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.pdb
+C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormComboBox.resources

@@ -31,7 +31,14 @@ namespace MoansoS01
         {
             this.panelBarra = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnLibre = new System.Windows.Forms.Button();
+            this.btnConexion = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.btnList = new System.Windows.Forms.Button();
+            this.btnCombo = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
             this.panelForms = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBarra
@@ -46,11 +53,101 @@ namespace MoansoS01
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelMenu.Controls.Add(this.btnLibre);
+            this.panelMenu.Controls.Add(this.btnConexion);
+            this.panelMenu.Controls.Add(this.btnCheck);
+            this.panelMenu.Controls.Add(this.btnList);
+            this.panelMenu.Controls.Add(this.btnCombo);
+            this.panelMenu.Controls.Add(this.btnInicio);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 43);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(142, 407);
             this.panelMenu.TabIndex = 1;
+            // 
+            // btnLibre
+            // 
+            this.btnLibre.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLibre.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLibre.FlatAppearance.BorderSize = 0;
+            this.btnLibre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLibre.Location = new System.Drawing.Point(0, 340);
+            this.btnLibre.Name = "btnLibre";
+            this.btnLibre.Size = new System.Drawing.Size(142, 68);
+            this.btnLibre.TabIndex = 5;
+            this.btnLibre.Text = "Libre";
+            this.btnLibre.UseVisualStyleBackColor = true;
+            this.btnLibre.Click += new System.EventHandler(this.btnLibre_Click);
+            // 
+            // btnConexion
+            // 
+            this.btnConexion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConexion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnConexion.FlatAppearance.BorderSize = 0;
+            this.btnConexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConexion.Location = new System.Drawing.Point(0, 272);
+            this.btnConexion.Name = "btnConexion";
+            this.btnConexion.Size = new System.Drawing.Size(142, 68);
+            this.btnConexion.TabIndex = 4;
+            this.btnConexion.Text = "Conexion BD";
+            this.btnConexion.UseVisualStyleBackColor = true;
+            this.btnConexion.Click += new System.EventHandler(this.btnConexion_Click);
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheck.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCheck.FlatAppearance.BorderSize = 0;
+            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheck.Location = new System.Drawing.Point(0, 204);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(142, 68);
+            this.btnCheck.TabIndex = 3;
+            this.btnCheck.Text = "CheckBox";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // btnList
+            // 
+            this.btnList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnList.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnList.FlatAppearance.BorderSize = 0;
+            this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnList.Location = new System.Drawing.Point(0, 136);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(142, 68);
+            this.btnList.TabIndex = 2;
+            this.btnList.Text = "ListBox";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
+            // btnCombo
+            // 
+            this.btnCombo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCombo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCombo.FlatAppearance.BorderSize = 0;
+            this.btnCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCombo.Location = new System.Drawing.Point(0, 68);
+            this.btnCombo.Name = "btnCombo";
+            this.btnCombo.Size = new System.Drawing.Size(142, 68);
+            this.btnCombo.TabIndex = 1;
+            this.btnCombo.Text = "ComboBox";
+            this.btnCombo.UseVisualStyleBackColor = true;
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Location = new System.Drawing.Point(0, 0);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(142, 68);
+            this.btnInicio.TabIndex = 0;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.UseVisualStyleBackColor = true;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // panelForms
             // 
@@ -75,6 +172,7 @@ namespace MoansoS01
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -83,6 +181,12 @@ namespace MoansoS01
         private System.Windows.Forms.Panel panelBarra;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panelForms;
+        private System.Windows.Forms.Button btnLibre;
+        private System.Windows.Forms.Button btnConexion;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnCombo;
+        private System.Windows.Forms.Button btnInicio;
     }
 }
 
