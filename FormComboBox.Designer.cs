@@ -102,7 +102,7 @@ namespace MoansoS01
             // 
             // btnNueva
             // 
-            this.btnNueva.Location = new System.Drawing.Point(614, 23);
+            this.btnNueva.Location = new System.Drawing.Point(514, 56);
             this.btnNueva.Name = "btnNueva";
             this.btnNueva.Size = new System.Drawing.Size(94, 26);
             this.btnNueva.TabIndex = 6;
@@ -131,7 +131,7 @@ namespace MoansoS01
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(514, 63);
+            this.btnEliminar.Location = new System.Drawing.Point(514, 88);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(94, 26);
             this.btnEliminar.TabIndex = 9;

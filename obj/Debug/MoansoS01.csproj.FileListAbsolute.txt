@@ -9,3 +9,4 @@ C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.csproj.CoreCompileInpu
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.exe
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.pdb
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormComboBox.resources
+C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormLB.resources

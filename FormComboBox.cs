@@ -55,8 +55,7 @@ namespace MoansoS01
             {
                 MessageBox.Show("El campo no puede estar vacio");
                 txtTarea.Focus();
-            }
-                
+            }           
         }
 
         private void btnNueva_Click(object sender, EventArgs e)
@@ -68,8 +67,13 @@ namespace MoansoS01
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            cmbTarea.Items.Remove(cmbTarea.SelectedItem);
-            cmbTarea.Text = "Escoja una ocpión";
+            if (cmbTarea.SelectedIndex != 1)
+            {
+                cmbTarea.Items.Remove(cmbTarea.SelectedItem);
+                cmbTarea.Text = "Escoja una ocpión";
+            }
+            else
+                MessageBox.Show("Escoja una ocpión a eliminar");
         }
     }
 }

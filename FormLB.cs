@@ -16,5 +16,33 @@ namespace MoansoS01
         {
             InitializeComponent();
         }
+
+        private void FormLB_Load(object sender, EventArgs e)
+        {
+            cmbEstado.Items.Add("Incompleto");
+            cmbEstado.Items.Add("Completado");
+            lstTareas.Items.Add("Sacar a pasear al perro" + " , " + "Completado");
+            lstTareas.Items.Add("Ir a clases" + " , " + "Incompleto");
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtTarea.Text != "" && cmbEstado.SelectedIndex != -1)
+            {
+                lstTareas.Items.Add(txtTarea.Text + " , " + cmbEstado.SelectedItem.ToString());
+                MessageBox.Show("Ingresado Correctamente");
+                txtTarea.Clear();
+                cmbEstado.Text = "Elija una opción";
+            }              
+            else
+                MessageBox.Show("Todos los campos deben ser completados");
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            lstTareas.Items.RemoveAt(lstTareas.SelectedIndex);
+            MessageBox.Show("Eliminado satisfactoriamente");
+        }
+
     }
 }
