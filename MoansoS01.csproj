@@ -94,6 +94,9 @@
     <EmbeddedResource Include="FormComboBox.resx">
       <DependentUpon>FormComboBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDB.resx">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLB.resx">
       <DependentUpon>FormLB.cs</DependentUpon>
     </EmbeddedResource>
