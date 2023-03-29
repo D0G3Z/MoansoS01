@@ -40,8 +40,8 @@ namespace MoansoS01{
             txtCodigo.Text = "";
             if(chkSi.Checked)
                 chkSi.Checked = false;
-            else
-                chkNo.Checked = false;
+            else if(chkNo.Checked)
+                chkNo.Checked = true;
         }
 
         private void FormDB_Load(object sender, EventArgs e)
@@ -54,8 +54,8 @@ namespace MoansoS01{
             if (dgvLibros.SelectedRows.Count > 0)
             {
                 conexionBD.Open();
-                DataGridViewRow selectedRow = dgvLibros.SelectedRows[0];
-                int id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                DataGridViewRow filaSelec = dgvLibros.SelectedRows[0];
+                int id = Convert.ToInt32(filaSelec.Cells["Id"].Value);
                 string consulta = "delete from Libros where Id = @id";
                 SqlCommand comando = new SqlCommand(consulta, conexionBD);
                 comando.Parameters.AddWithValue("@id", id);
@@ -83,6 +83,7 @@ namespace MoansoS01{
                 comando.Parameters.AddWithValue("@codigo", txtCodigo.Text);
                 comando.Parameters.AddWithValue("@prestado", check);
                 comando.ExecuteNonQuery();
+                MessageBox.Show("Agregado correctamente");
                 LimpiarCampos();
                 ActualizarTabla();
                 conexionBD.Close();
@@ -98,8 +99,8 @@ namespace MoansoS01{
                 conexionBD.Open();
                 if (chkSi.Checked)
                     check = true;
-                DataGridViewRow selectedRow = dgvLibros.SelectedRows[0];
-                int id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                DataGridViewRow filaSelec = dgvLibros.SelectedRows[0];
+                int id = Convert.ToInt32(filaSelec.Cells["Id"].Value);
                 string consulta = "update Libros set Nombre = @nombre, Autor = @autor, Codigo = @codigo, Prestado = @prestado where Id = @id";
                 SqlCommand comando = new SqlCommand(consulta, conexionBD);
                 comando.Parameters.AddWithValue("@nombre", txtNombre.Text);

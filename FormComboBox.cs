@@ -33,8 +33,8 @@ namespace MoansoS01
             if (cmbTarea.SelectedIndex != -1 && cmbPrioridad.SelectedIndex != -1)
             {
                 MessageBox.Show("Se estableció correctamente");
-                cmbPrioridad.Text = "Escoja una ocpión";
-                cmbTarea.Text = "Escoja una ocpión";
+                cmbTarea.SelectedIndex = -1;
+                cmbPrioridad.SelectedIndex = -1;
             }               
             else
                 MessageBox.Show("Escoja una opcion en ambos casos");
@@ -42,7 +42,7 @@ namespace MoansoS01
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtTarea.Text != "")
+            if (txtTarea.Text != String.Empty)
             {
                 cmbTarea.Items.Add(txtTarea.Text);
                 MessageBox.Show("Se agregó correctamente");
@@ -67,13 +67,13 @@ namespace MoansoS01
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (cmbTarea.SelectedIndex != 1)
+            if (cmbTarea.SelectedIndex != -1)
             {
                 cmbTarea.Items.Remove(cmbTarea.SelectedItem);
-                cmbTarea.Text = "Escoja una ocpión";
+                cmbTarea.SelectedIndex = -1;
             }
             else
-                MessageBox.Show("Escoja una ocpión a eliminar");
+                MessageBox.Show("Escoja una opción a eliminar");
         }
     }
 }

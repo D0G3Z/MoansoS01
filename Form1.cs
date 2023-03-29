@@ -28,18 +28,13 @@ namespace MoansoS01
             actual.FormBorderStyle = FormBorderStyle.None;
             actual.Dock = DockStyle.Fill;
             panelForms.Controls.Add(actual);
+            label2.Visible = false;
             actual.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-            if (frmactual != null)
-                frmactual.Close();
         }
 
         private void btnCombo_Click(object sender, EventArgs e)
@@ -66,5 +61,20 @@ namespace MoansoS01
         {
             AbrirForm(new FormLibreF());
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            if (frmactual != null)
+            {
+                frmactual.Close();
+                label2.Visible = true;
+            }
+        }
+                
     }
 }

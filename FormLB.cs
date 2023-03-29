@@ -32,7 +32,7 @@ namespace MoansoS01
                 lstTareas.Items.Add(txtTarea.Text + " , " + cmbEstado.SelectedItem.ToString());
                 MessageBox.Show("Ingresado Correctamente");
                 txtTarea.Clear();
-                cmbEstado.Text = "Elija una opción";
+                cmbEstado.SelectedIndex= -1;
             }              
             else
                 MessageBox.Show("Todos los campos deben ser completados");
@@ -40,8 +40,12 @@ namespace MoansoS01
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            lstTareas.Items.RemoveAt(lstTareas.SelectedIndex);
-            MessageBox.Show("Eliminado satisfactoriamente");
+            if(lstTareas.SelectedIndex != -1)
+            {
+                lstTareas.Items.RemoveAt(lstTareas.SelectedIndex);
+                MessageBox.Show("Eliminado satisfactoriamente");
+            }
+            else MessageBox.Show("Seleccione una tarea primero");
         }
 
     }
