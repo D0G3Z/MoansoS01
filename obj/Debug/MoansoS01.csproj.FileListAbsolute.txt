@@ -11,3 +11,17 @@ C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.pdb
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormComboBox.resources
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormLB.resources
 C:\Users\rocke\source\repos\MoansoS01\obj\Debug\MoansoS01.FormDB.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\bin\Debug\MoansoS01.exe.config
+D:\MOANSO C6\TrabajoS01\MoansoS01\bin\Debug\MoansoS01.exe
+D:\MOANSO C6\TrabajoS01\MoansoS01\bin\Debug\MoansoS01.pdb
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.csproj.AssemblyReference.cache
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.csproj.SuggestedBindingRedirects.cache
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.Form1.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.FormComboBox.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.FormDB.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.FormLB.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.Properties.Resources.resources
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.csproj.GenerateResource.cache
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.csproj.CoreCompileInputs.cache
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.exe
+D:\MOANSO C6\TrabajoS01\MoansoS01\obj\Debug\MoansoS01.pdb
