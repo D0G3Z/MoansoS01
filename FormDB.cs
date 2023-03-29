@@ -9,44 +9,37 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace MoansoS01{
-
+namespace MoansoS01
+{
     public partial class FormDB : Form
     {
         SqlConnection conexionBD = new SqlConnection("server= localhost; database= LibreriaMoanso; integrated security= true");
-
-        private void ActualizarTabla()
-        {
-            conexionBD.Open();
-            string consulta = "select *from Libros";
-            SqlDataAdapter adaptador = new SqlDataAdapter(consulta, conexionBD);
-            DataTable dt = new DataTable();
-            adaptador.Fill(dt);
-            dataGridView1.DataSource = dt;
-            conexionBD.Close();
-        }
-
         public FormDB()
         {
             InitializeComponent();
         }
 
-        private void FormDB_Load(object sender, EventArgs e)
-        {
-            ActualizarTabla();        
-        }
-
-        private void btnBorrar_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
             conexionBD.Open();
-            DataGridViewRow fila = dataGridView1.CurrentRow.Cells["Id"];
-            int id = Convert.ToInt32(fila.Cells["Id"].Value);
-            string consulta = "delete *from Libros where Id = @Id";
-            SqlCommand comando = new SqlCommand(consulta,conexionBD);
-            comando.Parameters.AddWithValue("@Id", id);
-            comando.ExecuteNonQuery();
-
-            dataGridView1.Rows.Remove(fila);
+            string consulta = "select Usuario, Contrasena from Usuarios where usuario = '" + 
+                txtUsuario.Text + "' and contrasena = '" + txtContra.Text + "'";
+            SqlCommand comando = new SqlCommand(consulta, conexionBD);
+            SqlDataReader dr = comando.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("Bienvenido nuevamente");
+                txtUsuario.Text = string.Empty;
+                txtContra.Text = string.Empty;
+                txtUsuario.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Datos no encontrados en la base de datos");
+                txtUsuario.Text = string.Empty;
+                txtContra.Text = string.Empty;
+                txtUsuario.Focus();
+            }               
             conexionBD.Close();
         }
     }

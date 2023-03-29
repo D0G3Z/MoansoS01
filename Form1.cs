@@ -64,7 +64,7 @@ namespace MoansoS01
 
         private void btnLibre_Click(object sender, EventArgs e)
         {
-            AbrirForm(new FormLibre());
+            AbrirForm(new FormLibreF());
         }
     }
 }

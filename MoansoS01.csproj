@@ -33,10 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -68,11 +80,11 @@
     <Compile Include="FormComboBox.Designer.cs">
       <DependentUpon>FormComboBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDB.cs">
+    <Compile Include="FormLibreF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDB.Designer.cs">
-      <DependentUpon>FormDB.cs</DependentUpon>
+    <Compile Include="FormLibreF.Designer.cs">
+      <DependentUpon>FormLibreF.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLB.cs">
       <SubType>Form</SubType>
@@ -80,22 +92,28 @@
     <Compile Include="FormLB.Designer.cs">
       <DependentUpon>FormLB.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLibre.cs">
+    <Compile Include="FormDB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLibre.Designer.cs">
-      <DependentUpon>FormLibre.cs</DependentUpon>
+    <Compile Include="FormDB.Designer.cs">
+      <DependentUpon>FormDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckBox.resx">
+      <DependentUpon>FormCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormComboBox.resx">
       <DependentUpon>FormComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDB.resx">
       <DependentUpon>FormDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibreF.resx">
+      <DependentUpon>FormLibreF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLB.resx">
       <DependentUpon>FormLB.cs</DependentUpon>
@@ -109,6 +127,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -121,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
